@@ -33,3 +33,7 @@ True
 >>> pybash.run('echo hello', get_return_code = True)
 0
 ```
+
+## License
+
+The MIT License (MIT)
