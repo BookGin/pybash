@@ -2,6 +2,7 @@
 Run shell scripts and Linux commands in python. Usage of redirection, pipe are identical to bash.
 
 ## Usage
+
 #### Run commands synchronously
 ```python
 >>> import pybash
@@ -32,6 +33,9 @@ True
 >>> pybash.run('echo hello', get_return_code = True)
 0
 ```
+
+## Security Notes
+*Pybash* sets `shell = True` for convenience. Users should ensure the commands are safe to run. Malicious commands like [shell injection](https://en.wikipedia.org/wiki/Code_injection#Shell_injection) may put your system at risk!
 
 ## License
 
