@@ -4,7 +4,6 @@ Run shell scripts and Linux commands in python. Usage of redirection, pipe are i
 ## Usage
 #### Run commands synchronously
 ```python
-$ python -q
 >>> import pybash
 >>> files = pybash.run('find ./example-dir')
 >>> print(files)
